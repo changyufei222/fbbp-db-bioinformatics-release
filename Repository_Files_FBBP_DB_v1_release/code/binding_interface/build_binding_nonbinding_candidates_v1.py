@@ -98,18 +98,18 @@ def classify_route(
         return (
             "contextual_complex_needs_chain_mapping",
             "contextual",
-            "本地是多链结构，但需要确认哪条链是真正 target chain",
+            "Multi-chain structure detected; target-chain mapping is required before residue-level interface extraction",
         )
     if has_target_pdb:
         return (
             "target_pdb_available_but_local_structure_single_chain",
             "inferred",
-            "有 target PDB 线索，但本地结构看起来是单链或已裁剪，需要补复合物结构或 target chain",
+            "Target PDB evidence is available, but the local structure appears single-chain or truncated; complex structure or target-chain evidence is required",
         )
     return (
         "manual_binding_annotation_needed",
         "inferred",
-        "当前没有足够结构证据，需要人工提供 binding residue 列表或复合物结构",
+        "Current structural evidence is insufficient for automatic interface extraction; curated binding residues or a complex structure are required",
     )
 
 
@@ -250,17 +250,17 @@ def main() -> None:
 
 生成时间：{timestamp}
 
-本文件的目的不是直接给出 residue-level binding 结论，而是把当前库里哪些 loop 已经具备“可以继续往界面定义推进”的证据梳理清楚。当前生成的 [binding_nonbinding_complex_candidates_v1.csv](<local_path_removed>/binding_nonbinding_complex_candidates_v1.csv) 按 loop 列出了 target PDB 线索、本地结构路径、实际链数以及建议的后续路线。
+本文件的目的不是直接给出 residue-level binding 结论，而是梳理当前库中哪些 loop 已具备进一步界面定义所需的结构证据。当前生成的 [binding_nonbinding_complex_candidates_v1.csv](<local_path_removed>/binding_nonbinding_complex_candidates_v1.csv) 按 loop 列出了 target PDB 线索、结构证据状态、实际链数以及建议的处理路线。
 
 如果某个 loop 被标成 `direct_complex_from_local_exact_pdb`，说明当前本地 exact PDB 同时满足两个条件：一是它本身是多链结构，二是它的 PDB 编号已经出现在该条目的 `Target_PDB_ID` 列里。这类条目最适合优先推进，因为理论上已经具备了按距离规则自动提取 binding residues 的必要前提。
 
 如果条目被标成 `contextual_complex_needs_chain_mapping`，说明本地结构是多链的，但我们还不知道哪条链是 target chain。这类条目通常只差最后一步链映射，补上 `target_chain_id` 后就能进入自动距离判定。
 
-如果条目被标成 `target_pdb_available_but_local_structure_single_chain`，说明宽表里虽然已经有 target PDB 线索，但当前本地结构看起来是单链、裁剪结构或非复合物结构。这类条目不是完全没法做，而是需要你后续补其中任意一种：复合物结构路径、target chain、或者人工 binding residue 列表。
+如果条目被标成 `target_pdb_available_but_local_structure_single_chain`，说明宽表里虽然已经有 target PDB 线索，但当前结构证据看起来是单链、裁剪结构或非复合物结构。这类条目应提供复合物结构、target-chain 映射或人工 curated binding residue 列表中的至少一类证据。
 
-如果条目被标成 `manual_binding_annotation_needed`，说明现有表里没有足够的结构证据来定义 interface。这类条目最直接的推进方式就是人工补一个 `binding_residue_list`。为了减少你手工整理的负担，我已经把可填写模板预生成到 [loop_subregion_annotations_input_v1.csv](<local_path_removed>/loop_subregion_annotations_input_v1.csv)，你只需要在有证据的条目上补 `target_chain_id` 或 `binding_residue_list` 即可。
+如果条目被标成 `manual_binding_annotation_needed`，说明现有表里没有足够的结构证据来定义 interface。这类条目的推荐处理方式是在有证据支持的情况下补充 `binding_residue_list`。可填写模板已预生成到 [loop_subregion_annotations_input_v1.csv](<local_path_removed>/loop_subregion_annotations_input_v1.csv)，用于记录 `target_chain_id` 或 `binding_residue_list`。
 
-建议实际执行顺序是：先优先处理 `direct` 和 `contextual` 条目，把能自动算 interface 的那部分先拿下来；然后再看是否有必要对剩余高价值 loop 人工补 hotspot 残基。这样可以尽快把 `binding vs non-binding` 子区分析从“全库都缺注释”推进到“至少一批高置信条目可做配对统计”。
+建议执行顺序是：优先处理 `direct` 和 `contextual` 条目，先完成可自动抽取 interface 的高置信子集；随后再评估剩余高价值 loop 是否需要人工 curated hotspot 残基。这样可以将 `binding vs non-binding` 子区分析推进到可审计的高置信配对统计层。
 """
     report_md.write_text(report, encoding="utf-8")
 

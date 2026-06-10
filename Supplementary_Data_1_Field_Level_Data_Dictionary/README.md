@@ -9,4 +9,4 @@ This file is provided as Supplementary Data rather than a numbered supplementary
 
 ## Public-release note
 
-Generic placeholder descriptions have been replaced with release-ready field definitions derived from column names, table context, and curated core-field descriptions. The file remains machine-readable and preserves row counts, inferred types, missing-value summaries, and example values from the release tables.
+Field definitions are derived from column names, table context, and curated core-field descriptions. The file remains machine-readable and preserves row counts, inferred types, missing-value summaries, and example values from the release tables.
