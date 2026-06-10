@@ -1,3 +1,5 @@
+> Interface guide: [English](./INTERFACE_GUIDE_EN.md) | [中文](./INTERFACE_GUIDE_CN.md)
+
 # FBBP supplementary data and repository files package
 
 This package separates numbered supplementary tables from machine-readable Supplementary Data and repository-style release files.
