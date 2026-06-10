@@ -1,0 +1,559 @@
+erDiagram
+  PROTEINS ||--o{ PROTEIN_IDENTIFIERS : has
+  PROTEINS ||--o{ DOMAINS : owns
+  SOURCES ||--o{ DOMAINS : documents
+  TARGETS_CONCEPTUAL ||--o{ TARGET_SPECIES_VARIANTS : expands_to
+  DOMAINS ||--o{ INTERACTIONS : participates_in
+  TARGET_SPECIES_VARIANTS ||--o{ INTERACTIONS : target_of
+  SOURCES ||--o{ INTERACTIONS : supports
+  INTERACTIONS ||--o{ AFFINITY_DATA : quantified_by
+  DOMAINS ||--o{ DIGESTIVE_ASSAYS : tested_by
+  PROTEINS ||--o{ FUNCTIONAL_ANNOTATIONS : annotated_by
+  DOMAINS ||--o{ STRUCTURAL_SOURCE_INFO : source_structure
+  PROTEINS ||--|| ACTIVE_STRUCTURE_CONTEXT : active_structure
+  ACTIVE_STRUCTURE_CONTEXT ||--o| BCELL_EPITOPE_RESULTS : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| MHCI_RESULTS : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| MHCII_RESULTS : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| IMMUNOGENICITY_SUMMARY : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| ECOLI_EXPRESSION_RESULTS : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| ORAL_RESULTS : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| SOLUBILITY_RESULTS : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| PROTPARAM_RESULTS : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| TED_RESULTS : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| PROTREK_RESULTS : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| FOLDSEEK_RESULTS : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| PLMSEARCH_RESULTS : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o| PROTEIN_FLEXIBILITY_SUMMARY : has
+  ACTIVE_STRUCTURE_CONTEXT ||--o{ LOOP_ANNOTATIONS : has
+  LOOP_ANNOTATIONS ||--o| LOOP_FLEXIBILITY_PUBLIC_SUMMARY : summarized_by
+  ACTIVE_STRUCTURE_CONTEXT ||--o| TRUSTED_SOURCE_QC : audited_by
+  ACTIVE_STRUCTURE_CONTEXT ||--o| MANUAL_REVIEW_AUDIT : reviewed_by
+  ACTIVE_STRUCTURE_CONTEXT ||--o| STRUCTURE_REFINEMENT_AUDIT : refined_by
+
+  SOURCES {
+    text source_id PK
+    text identifier
+    text title
+    text authors
+    text journal_or_office
+    text publication_date
+    text source_file_name
+    text source_type
+  }
+
+  PROTEINS {
+    integer protein_id PK
+    text structure_unique_sequence_id
+    text canonical_name
+    text organism
+    text source_sequence
+    text description
+    text scaffold_category
+    text final_tested_sequence
+    integer sequence_length
+  }
+
+  PROTEIN_IDENTIFIERS {
+    text identifier_id PK
+    integer protein_id
+    text id_type
+    text id_value
+    text status
+  }
+
+  DOMAINS {
+    text domain_id PK
+    integer protein_id
+    text source_id
+    text structure_unique_sequence_id
+    text domain_name
+    text sequence
+    boolean is_engineered
+    text construct_details
+    text scaffold_type
+  }
+
+  TARGETS_CONCEPTUAL {
+    text target_concept_id PK
+    text gene_name
+    text protein_name
+  }
+
+  TARGET_SPECIES_VARIANTS {
+    text target_variant_id PK
+    text target_concept_id
+    text species_name
+    text uniprot_id
+    text gene_name_species
+  }
+
+  INTERACTIONS {
+    text interaction_id PK
+    text domain_id
+    text target_variant_id
+    text source_id
+    text interaction_class
+    boolean is_inhibitory
+    integer protein_row_id
+    text structure_unique_sequence_id
+  }
+
+  AFFINITY_DATA {
+    text affinity_id PK
+    text interaction_id
+    text determination_method
+    text value
+  }
+
+  DIGESTIVE_ASSAYS {
+    text assay_id PK
+    text domain_id
+    text enzyme_name
+    real result_value
+  }
+
+  FUNCTIONAL_ANNOTATIONS {
+    text annotation_id PK
+    integer protein_id
+    text annotation_type
+    text annotation_value
+  }
+
+  STRUCTURAL_SOURCE_INFO {
+    text structure_id PK
+    text domain_id
+    text structure_unique_sequence_id
+    text pdb_id
+    text method
+    real resolution
+    text source_structure_identifier
+    text source_structure_type
+    text source_structure_note
+  }
+
+  ACTIVE_STRUCTURE_CONTEXT {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text structure_best_available_source
+    text structure_source
+    text structure_type
+    text structure_locator
+    text chain_id
+    integer resnum_start
+    integer resnum_end
+    integer chain_length
+    text final_chain_assignment
+    boolean complex_chain_annotation_completed
+    text pdb_path
+    text pdb_code
+    boolean chain_count
+    text structure_match_type
+    text structure_match_detail
+    real structure_match_identity
+    real structure_match_coverage
+    real structure_match_chain_coverage
+  }
+
+  BCELL_EPITOPE_RESULTS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text BP3_Input_ID
+    integer BP3_Residue_Count
+    real BP3_Mean_Score
+    real BP3_Max_Score
+    real BP3_Mean_Linear
+    real BP3_Max_Linear
+    real BP3_Top20_Ratio
+    text BP3_BCell_Level
+    real BP3_Confidence_Score_0_100
+    text BP3_Confidence_Level
+  }
+
+  MHCI_RESULTS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    integer mhci_total_rows
+    integer mhci_unique_peptides
+    integer mhci_hits_percentile_le_1pct
+    integer mhci_hits_percentile_le_2pct
+    integer mhci_hits_ba_ic50_lt50nM
+    integer mhci_hits_ba_ic50_lt500nM
+    integer mhci_hits_ba_ic50_lt5000nM
+    integer mhci_immunogenicity_positive_count_score_gt0
+    real mhci_immunogenicity_positive_ratio
+    text mhci_best_peptide
+    text mhci_best_allele
+    real mhci_best_median_percentile
+    real mhci_best_ba_ic50_nM
+    real mhci_best_el_percentile
+    real mhci_best_ba_percentile
+    real mhci_best_immunogenicity_score
+    text mhci_binding_level
+    text mhci_immunogenicity_level
+    real mhci_confidence_score_0_100
+    text mhci_confidence_level
+  }
+
+  MHCII_RESULTS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    integer mhcii_total_rows
+    integer mhcii_unique_peptides
+    integer mhcii_hits_percentile_le_10pct
+    integer mhcii_hits_percentile_le_5pct
+    integer mhcii_hits_ba_ic50_lt50nM
+    integer mhcii_hits_ba_ic50_lt500nM
+    text mhcii_best_peptide
+    text mhcii_best_allele
+    real mhcii_best_median_percentile
+    real mhcii_best_ba_ic50_nM
+    real mhcii_best_el_percentile
+    real mhcii_best_ba_percentile
+    real mhcii_best_cd4_score
+    real mhcii_best_combined_score
+    text mhcii_binding_level
+  }
+
+  IMMUNOGENICITY_SUMMARY {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text overall_final_judgement
+    real overall_confidence_score_0_100
+    text overall_confidence_level
+  }
+
+  ECOLI_EXPRESSION_RESULTS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text EcoliExpr_screen_input_id
+    integer EcoliExpr_screen_row_index
+    text EcoliExpr_screen_track
+    real EcoliExpr_soluprot_score
+    real EcoliExpr_netsolp_solubility
+    real EcoliExpr_netsolp_usability
+    real EcoliExpr_rp3net_score
+    real EcoliExpr_ensemble_score
+    boolean EcoliExpr_engineering_required
+    boolean EcoliExpr_out_of_domain
+    text EcoliExpr_recommended_ecoli_route
+    text EcoliExpr_candidate_bucket
+    text EcoliExpr_screening_note
+    text EcoliExpr_track_reason
+    integer EcoliExpr_score_components_available
+    real EcoliExpr_priority_rank_within_track
+    integer EcoliExpr_priority_rank_within_scaffold
+    real EcoliExpr_ensemble_score_weight_sum
+    real EcoliExpr_netsolp_tool_score
+    integer EcoliExpr_confidence_score_0_100
+    text EcoliExpr_confidence_tier
+    real EcoliExpr_tool_score_spread
+  }
+
+  ORAL_RESULTS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text Oral_ID
+    integer Oral_SGF_%
+    real Oral_SIF_%
+    integer Oral_Pepsin_Frags
+    integer Oral_Intestine_Frags
+    integer Oral_Max_Frag_Len
+    integer Oral_DeepDigest_Risk
+    text Oral_Uptake_Rating
+    text Oral_Uptake_Evidence
+    real Oral_CPP_Best_Prob
+    text Oral_CPP_Best_Seq
+    integer Oral_CPP_Positive_Unique_Count
+    integer Oral_CPP_HighEff_Unique_Count
+    integer Oral_PEPT1_Candidate_Count
+    integer Oral_PEPT1_Dipeptide_Count
+    integer Oral_PEPT1_Tripeptide_Count
+    text Oral_Rating_Strict
+    text Oral_Rating
+    text Oral_Confidence
+  }
+
+  SOLUBILITY_RESULTS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text QCBundleServerOfficial_protein_name
+    text QCBundleServerOfficial_fasta_header
+    text QCBundleServerOfficial_scaffold_category
+    text QCBundleServerOfficial_protein_label
+    integer QCBundleServerOfficial_sequence_length
+    text QCBundleServerOfficial_pdb_file
+    text QCBundleServerOfficial_pdb_path
+    text QCBundleServerOfficial_assessment_branch
+    text QCBundleServerOfficial_gravy_score
+    real QCBundleServerOfficial_instability_index
+    real QCBundleServerOfficial_soluprot_score
+    real QCBundleServerOfficial_camsol_score
+    real QCBundleServerOfficial_deepsol_score
+    text QCBundleServerOfficial_a3d_avg_score
+    real QCBundleServerOfficial_a3d_max_score
+    text QCBundleServerOfficial_final_assessment
+    text QCBundleServerOfficial_protparam_interpretation
+    text QCBundleServerOfficial_soluprot_call
+    text QCBundleServerOfficial_soluprot_interpretation
+    text QCBundleServerOfficial_deepsol_call
+    text QCBundleServerOfficial_deepsol_interpretation
+    text QCBundleServerOfficial_camsol_call
+    text QCBundleServerOfficial_camsol_interpretation
+    text QCBundleServerOfficial_a3d_call
+    text QCBundleServerOfficial_a3d_interpretation
+    text QCBundleServerOfficial_sequence_consensus_code
+    text QCBundleServerOfficial_sequence_consensus
+    text QCBundleServerOfficial_structure_interpretation_code
+    text QCBundleServerOfficial_structure_interpretation
+    text QCBundleServerOfficial_final_assessment_code
+  }
+
+  PROTPARAM_RESULTS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    real ProtParam_MW_Da
+    real ProtParam_pI
+    real ProtParam_GRAVY
+    real ProtParam_Instability_Index
+    real ProtParam_Aromaticity
+    integer ProtParam_Ext_Coeff_Reduced
+    integer ProtParam_Ext_Coeff_Oxidized
+  }
+
+  TED_RESULTS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    real TED_n_residues
+    real TED_n_high
+    real TED_n_medium
+    real TED_n_low
+    real TED_n_consensus
+    text TED_high_domains
+    text TED_medium_domains
+    text TED_low_domains
+    real TED_searchable_domain_count
+    real TED_searchable_high_domain_count
+    real TED_searchable_medium_domain_count
+    real TED_domains_with_cath_hit_count
+    real TED_domains_without_cath_hit_count
+    real TED_domain_hit_coverage
+    real TED_mean_novelty_l2_topk
+    real TED_max_novelty_l2_topk
+    text TED_best_top1_target
+    real TED_best_top1_cosine
+    text TED_best_cath_domain_id
+    real TED_best_cath_class_code
+    text TED_best_cath_class_name
+    real TED_best_cath_architecture_code
+    text TED_best_cath_architecture_name
+    text TED_best_cath_topology_code
+    text TED_best_cath_topology_name
+    text TED_best_cath_superfamily_code
+    text TED_best_cath_superfamily_name
+    text TED_top_hit_targets_all
+    text TED_top_hit_superfamilies_all
+    text TED_top_hit_topologies_all
+    text TED_best_domain_id
+    text TED_best_domain_confidence
+    text TED_best_domain_ranges
+    real TED_best_domain_novelty_l2_topk
+    text TED_best_domain_top1_target
+    real TED_best_domain_top1_cosine
+    text TED_best_domain_cath_superfamily_code
+    text TED_best_domain_cath_superfamily_name
+    text TED_domain_summary_compact
+  }
+
+  PROTREK_RESULTS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text protrek_confidence
+    text protrek_confidence_reason
+    text protrek_official_seq2seq_band
+    real protrek_official_seq2seq_score
+    text protrek_official_function_band
+    real protrek_official_function_score
+    text protrek_structure_support
+    text protrek_structure_support_detail
+    text protrek_seq_top1_hit
+    text protrek_seq_function_top1
+    text protrek_str_top1_hit
+    real protrek_str_top1_score
+    text protrek_str_function_top1
+    real protrek_str_function_score
+  }
+
+  FOLDSEEK_RESULTS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text foldseek_status
+    text foldseek_target
+    text foldseek_evalue
+    real foldseek_bits
+    real foldseek_alntmscore
+    real foldseek_qtmscore
+    real foldseek_ttmscore
+    real foldseek_lddt
+    real foldseek_prob
+    real foldseek_fident
+    real foldseek_alnlen
+    real foldseek_qcov
+    real foldseek_tcov
+    real foldseek_avg_tm
+    text foldseek_confidence
+  }
+
+  PLMSEARCH_RESULTS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text PLMSearch_query_original
+    text PLMSearch_query_normalized
+    integer PLMSearch_hit_count
+    text PLMSearch_top1_target
+    real PLMSearch_top1_score
+    text PLMSearch_top1_confidence_level
+    text PLMSearch_top2_target
+    text PLMSearch_top3_target
+    text PLMSearch_top4_target
+    text PLMSearch_top5_target
+    text PLMSearch_top6_target
+    text PLMSearch_top7_target
+    text PLMSearch_top8_target
+    text PLMSearch_top9_target
+    text PLMSearch_top10_target
+    text PLMSearch_top11_target
+    text PLMSearch_top12_target
+    text PLMSearch_top13_target
+    text PLMSearch_top14_target
+    text PLMSearch_top15_target
+    text PLMSearch_top16_target
+    text PLMSearch_top17_target
+    text PLMSearch_top18_target
+    text PLMSearch_top19_target
+    text PLMSearch_top20_target
+  }
+
+  LOOP_ANNOTATIONS {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    integer loop_slot
+    text loop_id PK
+    text loop_chain_id
+    integer loop_start
+    integer loop_end
+    integer loop_length
+    text loop_flank_pattern
+    text loop_status
+    text loop_label
+    text loop_manual_decision
+    text loop_confidence_tier
+    text loop_candidate_scope
+    text loop_note
+    boolean loop_is_active
+  }
+
+  LOOP_FLEXIBILITY_PUBLIC_SUMMARY {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text loop_id PK
+    integer loop_slot
+    text loop_chain_id
+    real loop_start
+    real loop_end
+    real loop_length
+    text loop_status
+    text loop_manual_decision
+    text loop_confidence_tier
+    text loop_candidate_scope
+    text selected_structure_source
+    real avg_rsa
+    text avg_asa
+    real loop_constraint_score_total_norm
+    text itsflex_score
+    text itsflex_class
+    real flexscore_ensemble_diversity
+    text flexibility_score_static
+    real flexibility_score_dynamic
+    real flexibility_overall_score
+    integer flexibility_evidence_count
+    text flexibility_consensus_label
+    boolean flexibility_conflict_flag
+    text flexibility_result_version
+    text flexibility_result_timestamp
+  }
+
+  PROTEIN_FLEXIBILITY_SUMMARY {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    integer flexibility_loop_count_total
+    integer flexibility_loop_count_primary
+    integer flexibility_loop_count_with_dssp
+    integer flexibility_loop_count_with_getcontact
+    integer flexibility_loop_count_with_itsflex
+    integer flexibility_loop_count_with_colabfold
+    real flexibility_avg_rsa_mean
+    real flexibility_avg_rsa_median
+    real flexibility_constraint_score_mean
+    real flexibility_constraint_score_median
+    text flexibility_itsflex_score_mean
+    text flexibility_itsflex_score_median
+    real flexibility_dynamic_score_mean
+    real flexibility_dynamic_score_median
+    integer flexibility_consensus_rigid_count
+    integer flexibility_consensus_intermediate_count
+    integer flexibility_consensus_flexible_count
+    integer flexibility_conflict_loop_count
+    text flexibility_summary_version
+    text flexibility_summary_timestamp
+  }
+
+  TRUSTED_SOURCE_QC {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text qc_review_mode
+    text trusted_source_group
+    boolean trusted_source_sampled_for_qc
+    text trusted_source_qc_verdict
+    text trusted_source_qc_issue_type
+    text trusted_source_qc_sampling_stratum
+    real trusted_source_qc_sampling_rate
+    integer trusted_source_origin_row_index
+  }
+
+  MANUAL_REVIEW_AUDIT {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text review_timestamp
+    text manual_overall_verdict
+  }
+
+  STRUCTURE_REFINEMENT_AUDIT {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text pre_refine_Final_Tested_Sequence
+    integer pre_refine_Sequence_Length
+    text pre_refine_Sequence_PDB_ID
+    text pre_refine_local_pdb_exact_structure_paths
+    text pre_refine_local_pdb_fasta_paths
+    text pre_refine_structure_locator
+    text pre_refine_pdb_path
+    text pre_refine_chain_id
+    boolean pre_refine_chain_count
+    integer pre_refine_resnum_start
+    integer pre_refine_resnum_end
+    boolean structure_refinement_applied
+    text structure_refinement_status
+    text structure_refinement_notes
+  }
+
+  PIPELINE_VERSIONS {
+    text pipeline_name PK
+    text source_table PK
+    text version
+    text timestamp
+  }
+
+  RESULT_METADATA {
+    text key PK
+    text value
+  }

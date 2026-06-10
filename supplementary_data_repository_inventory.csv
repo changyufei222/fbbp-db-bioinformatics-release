@@ -1,0 +1,6 @@
+item,folder,recommended_submission_location,role
+Supplementary Data 1,Supplementary_Data_1_Field_Level_Data_Dictionary,Supplementary Data,Field-level data dictionary
+Supplementary Data 2,Supplementary_Data_2_LLM_Prompts_and_Curation_QC,Supplementary Data,Full LLM prompts and curation-QC metrics
+Supplementary Data 3,Supplementary_Data_3_RAG_Agent_Benchmark,Supplementary Data,Fixed 120-question RAG/agent benchmark and results
+Supplementary Data 4,Supplementary_Data_4_Figure_Source_Data_Code_Manifest,Supplementary Data,Figure source-data/code manifest
+Repository files,Repository_Files_FBBP_DB_v1_release,Data/code repository or supplementary archive,"Release objects, schema, scripts and checksums"

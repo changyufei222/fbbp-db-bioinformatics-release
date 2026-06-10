@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite the associated manuscript and this archived data release."
+title: "FBBP-DB v1.0.0: data release for family-aware active-loop annotation of non-antibody scaffold binders"
+version: "v1.0.0"
+date-released: "2026-06-01"
+doi: "10.5281/zenodo.TBD"
+authors:
+  - family-names: "TBD"
+    given-names: "TBD"
+repository-code: "TBD"
+url: "TBD"
+license: "CC-BY-4.0"

@@ -1,0 +1,8 @@
+object	expected_file	expected_rows_or_status	source_or_command_scope
+protein-level resource	tables/proteins.csv	1996 rows	release package table
+active-loop annotations	tables/loop_annotations.csv	3383 rows	release package table
+flexibility evidence	tables/loop_flexibility_public_summary.csv	3383 rows	release package table
+strict background summary	analysis/strict_background/strict_combined_background_summary_20260531.csv	1 summary row with bootstrap CI and length-adjusted OR	strict background workflow
+binding-window primary stats	analysis/binding_interface/binding_vs_nonbinding_primary_stats_manual_final_v1.csv	overall primary avgRSA row plus feature rows	binding/interface workflow
+PCSK9 case summary	analysis/binding_interface/pcsk9_1459D05_case_study_summary.tsv	loop-level case summary	PCSK9/1459D05 reconstruction workflow
+figure source map	figure_source_data/final_figure_source_map_20260601.csv	5 main figures mapped	manuscript source-data trace

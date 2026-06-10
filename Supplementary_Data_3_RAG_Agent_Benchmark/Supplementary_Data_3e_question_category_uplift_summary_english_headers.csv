@@ -1,0 +1,4 @@
+question_category,Mean uplift,Median uplift,Min uplift,Max uplift,result_interpretation
+doc/design,+0.7033,+0.7674,+0.2249,+0.9526,方法学、字段和设计问题最适合 RAG 证据增强
+schema,+0.5884,+0.6551,+0.1646,+0.7717,表结构和字段关系能被模型较好吸收
+ragppi,+0.4079,+0.3726,-0.0108,+0.8072,互作类问题总体受益，但更依赖实体匹配和精确证据定位

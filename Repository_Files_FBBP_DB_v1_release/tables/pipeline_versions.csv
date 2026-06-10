@@ -1,0 +1,6 @@
+pipeline_name,source_table,version,timestamp
+source_core_main_1996_rebuild,source_core_main_1996.csv,v1,2026-05-13
+source_core_main_1996_preprediction,source_core_main_1996_preprediction.csv,v1,2026-05-13
+master_total_merge,主总表_1996_蛋白级.csv,v1,2026-05-14
+loop_annotations_adopted,loop_annotations.csv,v1,2026-05-14
+flexibility_public_summary,loop_flexibility_public_summary.csv,v1,2026-05-14

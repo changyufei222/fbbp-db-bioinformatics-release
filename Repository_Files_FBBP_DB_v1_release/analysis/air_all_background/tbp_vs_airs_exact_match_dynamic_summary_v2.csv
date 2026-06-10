@@ -1,0 +1,3 @@
+has_air_exact_seq_match,n_loops,n_with_dynamic,diversity_mean,diversity_median,dynamic_mean,dynamic_median,clusters_mean,itsflex_mean,match_group
+False,3262,3053,3.2936993121519818,1.134,1.6612036136435084,0.629504,5.25515886013757,0.15452215497988428,no_exact_air_seq_match
+True,121,120,2.944175,0.4095,1.5859168416666667,0.2906025,3.5083333333333333,0.22765862009440002,exact_air_seq_match

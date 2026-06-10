@@ -1,0 +1,3 @@
+模型,Rounds,Full success rounds,Failed rows total,Answer relevancy mean,95% CI,Faithfulness mean,Context precision mean,Mean latency ms,P50 latency ms,P95 latency ms
+DeepSeek-V3.2,100,100,0,0.7624,"[0.7532, 0.7716]",0.8297,0.9265,11009.04,10267.04,16430.45
+MiniMax-M2.7,100,100,0,0.8220,"[0.8085, 0.8356]",0.8950,0.9331,24610.60,19483.19,47676.42

@@ -1,0 +1,16 @@
+子类,数量,主要问题类型
+protein_profile,8,蛋白条目概况、scaffold、序列/对象摘要
+protein_identifier,4,蛋白 ID、名称和标识符映射
+interaction_overview,8,蛋白-靶点互作和 interaction-level 摘要
+affinity,8,亲和力数值、单位、证据类型和测定上下文
+developability,6,开发性、表达、口服/溶解性等摘要
+annotation,4,注释和对象级解释
+provenance,4,来源、证据和审计血缘
+structure,4,PDB/预测结构、结构来源和结构定位
+digestive_assay,2,消化/稳定性相关信息
+immunogenicity,2,免疫原性相关结果
+loop_annotation,2,loop 注释结果
+loop_flexibility,2,loop 柔性分析结果
+protein_flexibility,2,蛋白级柔性摘要
+target_variant,2,靶点物种或变体上下文
+source_metadata,2,来源元数据和 registry 信息

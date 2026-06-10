@@ -1,0 +1,14 @@
+table,join_type,rows,duplicate_key_rows,base_missing_rows,extra_rows_not_in_base,mapped_rows,note
+foldseek,direct protein_row_id + structure_unique_sequence_id,1996,0,0,0,1996,direct merge
+protrek,direct protein_row_id + structure_unique_sequence_id,1996,0,0,0,1996,direct merge
+ted,direct protein_row_id + structure_unique_sequence_id,1996,0,0,0,1996,direct merge
+bcell_epitope,direct protein_row_id + structure_unique_sequence_id,1996,0,0,0,1996,direct merge
+ecoli_expression,direct protein_row_id + structure_unique_sequence_id,1996,0,0,0,1996,direct merge
+immunogenicity_summary,direct protein_row_id + structure_unique_sequence_id,1996,0,0,0,1996,direct merge
+mhci_results,direct protein_row_id + structure_unique_sequence_id,1996,0,0,0,1996,direct merge
+mhcii_results,direct protein_row_id + structure_unique_sequence_id,1996,0,0,0,1996,direct merge
+oral_results,direct protein_row_id + structure_unique_sequence_id,1996,0,0,0,1996,direct merge
+protparam_results,direct protein_row_id + structure_unique_sequence_id,1996,0,0,0,1996,direct merge
+protein_flexibility_summary,direct protein_row_id + structure_unique_sequence_id,1996,0,0,0,1996,direct merge
+solubility_results,regex extract structure_unique_sequence_id from protein_name/fasta_header,1996,0,0,0,1996,renamed to QCBundleServerOfficial_*
+plmsearch_results,regex extract structure_unique_sequence_id from query_original/query_normalized,1996,0,0,0,1996,renamed to PLMSearch_*

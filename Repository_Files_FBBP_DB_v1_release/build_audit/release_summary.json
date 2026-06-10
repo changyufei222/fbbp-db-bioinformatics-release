@@ -1,0 +1,8 @@
+{
+  "release_version": "v1.0.0",
+  "release_date": "2026-06-01",
+  "included_files": 99,
+  "protein_rows": 1996,
+  "loop_annotation_rows": 3383,
+  "loop_flexibility_rows": 3383
+}

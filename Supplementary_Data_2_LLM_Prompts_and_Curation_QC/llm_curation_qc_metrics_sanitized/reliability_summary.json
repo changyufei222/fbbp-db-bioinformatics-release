@@ -1,0 +1,13 @@
+{
+  "union_keys": 128,
+  "both_present_keys": 42,
+  "left_only_keys": 77,
+  "right_only_keys": 9,
+  "DRA": 0.328125,
+  "SCA": null,
+  "ERA": 0.328125,
+  "FEA": 0.6197278911564625,
+  "FTA": 0.5314285714285715,
+  "RRS": 0.6197278911564625,
+  "Reliability_Score": 0.3703112244897959
+}

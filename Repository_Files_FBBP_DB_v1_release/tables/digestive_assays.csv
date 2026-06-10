@@ -1,0 +1,18 @@
+assay_id,domain_id,enzyme_name,result_value
+ASSAY_000001,DOM_0006,trypsin and pepsin | Experimental,75.0
+ASSAY_000002,DOM_0007,"trypsin, endoproteinase Asp-N | Experimental",
+ASSAY_000003,DOM_0015,trypsin and pepsin | Experimental,75.0
+ASSAY_000004,DOM_0016,trypsin and pepsin | Experimental,75.0
+ASSAY_000005,DOM_0017,trypsin and pepsin | Experimental,75.0
+ASSAY_000006,DOM_0018,trypsin and pepsin | Experimental,75.0
+ASSAY_000007,DOM_0022,trypsin | Experimental,
+ASSAY_000008,DOM_0057,human serum | Experimental,
+ASSAY_000009,DOM_0060,human serum | Experimental,
+ASSAY_000010,DOM_0107,trypsin | Experimental,
+ASSAY_000011,DOM_0131,trypsin | Experimental,
+ASSAY_000012,DOM_0146,trypsin | Experimental,
+ASSAY_000013,DOM_0274,pepsin | Experimental,
+ASSAY_000014,DOM_0754,trypsin | Experimental,
+ASSAY_000015,DOM_0870,pepsin | Experimental,260.0
+ASSAY_000016,DOM_0884,porcine pancreatic elastase | Experimental,24.0
+ASSAY_000017,DOM_0943,trypsin and pepsin | Experimental,75.0

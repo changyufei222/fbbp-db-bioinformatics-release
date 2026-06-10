@@ -1,0 +1,5 @@
+comparison,strata_used,mantel_haenszel_or
+TBP_all_binary_vs_AIR_all,21,9.173988888893703
+TBP_primary_vs_AIR_all,13,8.638295513908199
+TBP_all_binary_vs_AIR_PDB,21,9.370033729888359
+TBP_primary_vs_AIR_PDB,13,8.86153401300366

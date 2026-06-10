@@ -1,0 +1,5 @@
+source_or_category,count,record_type,main_capability_tested,inclusion_rationale
+ragppi gold-standard,40,csv,蛋白互作实体识别、互作事实抽取、生物学意义概括,检验 RAG 对外部互作证据和实体定位的帮助
+doc/design,20,text,方法学、系统设计、RAG 架构、质量治理和 benchmark 规则理解,检验模型能否利用文档化设计证据回答方法问题
+schema_tables,60,jsonl,结构化表、字段、ID、来源、亲和力、结构和开发性事实定位,检验模型能否利用 FBBP 数据库证据回答私有结构化问题
+合计,120,csv/text/jsonl,外部知识、方法文档和私有数据库三类能力,形成固定、可复现、跨模型一致的问题全集

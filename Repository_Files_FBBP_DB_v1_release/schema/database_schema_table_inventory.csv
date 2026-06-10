@@ -1,0 +1,33 @@
+table_name,layer,primary_key,foreign_keys,direct_from_current_master,note
+proteins,A.实验/事实层,protein_id,none,否，需从主总表拆分并去重,蛋白核心实体表，1 protein 1 row
+sources,A.实验/事实层,source_id,none,否，需从主总表拆分并去重,来源文献/专利/数据库表
+protein_identifiers,A.实验/事实层,identifier_id,protein_id -> proteins.protein_id,否，需从主总表拆分并去重,UniProt/PDB/Entry 等标识表
+domains,A.实验/事实层,domain_id,protein_id -> proteins.protein_id; source_id -> sources.source_id,否，需从主总表拆分并去重,domain / construct / scaffold 实体表
+targets_conceptual,A.实验/事实层,target_concept_id,none,否，需从主总表拆分并去重,靶点概念层
+target_species_variants,A.实验/事实层,target_variant_id,target_concept_id -> targets_conceptual.target_concept_id,否，需从主总表拆分并去重,靶点物种变体层
+interactions,A.实验/事实层,interaction_id,domain_id -> domains.domain_id; target_variant_id -> target_species_variants.target_variant_id; source_id -> sources.source_id,否，需从主总表拆分并去重,结合对象与作用关系表
+affinity_data,A.实验/事实层,affinity_id,interaction_id -> interactions.interaction_id,否，需从主总表拆分并去重,亲和力数值表
+digestive_assays,A.实验/事实层,assay_id,domain_id -> domains.domain_id,否，需从主总表拆分并去重,来源层消化实验事实表
+functional_annotations,A.实验/事实层,annotation_id,protein_id -> proteins.protein_id,否，需从主总表拆分并去重,GO/Keyword/Function 等注释表
+structural_source_info,B.Structure层,structure_id,domain_id -> domains.domain_id,否，需从主总表拆分并去重,来源层结构事实：pdb_id/method/resolution
+active_structure_context,B.Structure层,protein_row_id + structure_unique_sequence_id,none,是，直接来自预测前主表,数据库实际采用的活跃结构上下文
+bcell_epitope_results,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，独立结果表直接使用,B 细胞表位结果
+mhci_results,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，独立结果表直接使用,MHC-I 结果
+mhcii_results,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，独立结果表直接使用,MHC-II 结果
+immunogenicity_summary,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，独立结果表直接使用,综合免疫原性汇总
+ecoli_expression_results,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，独立结果表直接使用,E. coli 表达预测结果
+oral_results,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，独立结果表直接使用,口服预测结果
+solubility_results,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，已在主总表中完成映射,QCBundle / solubility 结果
+protparam_results,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，独立结果表直接使用,ProtParam 理化性质结果
+ted_results,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，独立结果表直接使用,TED 蛋白宇宙结果
+protrek_results,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，独立结果表直接使用,ProTrek 结果
+foldseek_results,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，独立结果表直接使用,Foldseek 结果
+plmsearch_results,C.预测/结果层,protein_row_id + structure_unique_sequence_id,none,是，已在主总表中完成映射,PLMSearch 结果
+loop_annotations,D.loop/柔性层,protein_row_id + structure_unique_sequence_id + loop_id,none,是，独立 long table 直接使用,数据库正式 loop 表
+loop_flexibility_public_summary,D.loop/柔性层,protein_row_id + structure_unique_sequence_id + loop_id,none,是，独立 long table 直接使用,loop 级柔性轻量结论表
+protein_flexibility_summary,D.loop/柔性层,protein_row_id + structure_unique_sequence_id,none,是，独立结果表直接使用,蛋白级柔性摘要
+trusted_source_qc,E.审计/Provenance层,protein_row_id + structure_unique_sequence_id 或 audit_id,none,部分已有，建议后续单独整理,可信来源抽样 QC 结果
+manual_review_audit,E.审计/Provenance层,protein_row_id + structure_unique_sequence_id 或 audit_id,none,部分已有，建议后续单独整理,人工审核痕迹表
+structure_refinement_audit,E.审计/Provenance层,protein_row_id + structure_unique_sequence_id,none,否，需从 QC 真实最终结构细化层单独整理,结构细化前后对照审计
+pipeline_versions,E.审计/Provenance层,pipeline_name + source_table,none,否，建议后续手工整理,流程版本表
+result_metadata,E.审计/Provenance层,key,none,否，建议后续手工整理,结果元数据表

@@ -1,0 +1,8 @@
+key,value
+master_row_count,1996
+loop_row_count,3383
+main_key,protein_row_id + structure_unique_sequence_id
+loop_key,protein_row_id + structure_unique_sequence_id + loop_id
+design_principle,facts_and_predictions_strictly_separated
+structure_layer_split,structural_source_info + active_structure_context
+loop_storage_strategy,keep_long_tables_separate_from_protein_level_master

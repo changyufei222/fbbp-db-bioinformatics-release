@@ -1,0 +1,4 @@
+Candidate top_k,Mean RAG answer relevancy,Mean Direct answer relevancy,Mean uplift,Mean RAG latency ms,Mean latency ratio,Mean faithfulness,Mean context precision
+32,0.7614,0.2021,+0.5593,45138.84,14.72,0.8597,0.9352
+64,0.7480,0.2021,+0.5459,77357.43,25.27,0.8513,0.9370
+128,0.7146,0.2290,+0.4856,143530.31,47.45,0.8524,0.9364

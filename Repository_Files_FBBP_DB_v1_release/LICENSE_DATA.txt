@@ -1,0 +1,8 @@
+FBBP-DB v1.0.0 data release candidate
+
+Recommended public data license: Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+Human-readable license summary: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+This package contains derived annotations, curated records, schema files, and analysis outputs produced for FBBP-DB. Third-party source materials that may not be redistributable, such as full-text articles, patent full texts, restricted database exports, API keys, and local cache paths, are not intended for redistribution in this package.

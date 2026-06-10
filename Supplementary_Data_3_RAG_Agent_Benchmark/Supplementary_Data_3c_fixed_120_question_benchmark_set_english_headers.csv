@@ -1,0 +1,121 @@
+index,question_id,source_category,record_type,subclass_or_tags,original_question,expected_keywords
+1,fixed-001,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between KLK7 and CDSN? Summarize the biological significance concisely.,KLK7; CDSN
+2,fixed-002,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between MED15 and sbp-1? Summarize the biological significance concisely.,MED15; sbp-1
+3,fixed-003,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between CET1 and CEG1? Summarize the biological significance concisely.,CET1; CEG1
+4,fixed-004,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between Blos1 and Rab11? Summarize the biological significance concisely.,Blos1; Rab11
+5,fixed-005,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between rev and DDX21? Summarize the biological significance concisely.,rev; DDX21
+6,fixed-006,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between ASF1 and BDF1? Summarize the biological significance concisely.,ASF1; BDF1
+7,fixed-007,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between tan and Asx? Summarize the biological significance concisely.,tan; Asx
+8,fixed-008,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between ABCC8 and KCNJ11? Summarize the biological significance concisely.,ABCC8; KCNJ11
+9,fixed-009,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between wip-1 and wsp-1? Summarize the biological significance concisely.,wip-1; wsp-1
+10,fixed-010,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between MSS116 and RPO41? Summarize the biological significance concisely.,MSS116; RPO41
+11,fixed-011,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between ytr and Tsp68C? Summarize the biological significance concisely.,ytr; Tsp68C
+12,fixed-012,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between SPC110 and CMD1? Summarize the biological significance concisely.,SPC110; CMD1
+13,fixed-013,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between MDN1 and WDR12? Summarize the biological significance concisely.,MDN1; WDR12
+14,fixed-014,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between env and CD4? Summarize the biological significance concisely.,env; CD4
+15,fixed-015,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between HAP5 and HAP2? Summarize the biological significance concisely.,HAP5; HAP2
+16,fixed-016,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between Pc and Pcl? Summarize the biological significance concisely.,Pc; Pcl
+17,fixed-017,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between LDHA and SQSTM1? Summarize the biological significance concisely.,LDHA; SQSTM1
+18,fixed-018,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between CD81 and CBL? Summarize the biological significance concisely.,CD81; CBL
+19,fixed-019,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between WASp and Cip4? Summarize the biological significance concisely.,WASp; Cip4
+20,fixed-020,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between nsp12 and nsp8? Summarize the biological significance concisely.,nsp12; nsp8
+21,fixed-021,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between tsp-15 and bli-3? Summarize the biological significance concisely.,tsp-15; bli-3
+22,fixed-022,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between ABI3 and ABI5? Summarize the biological significance concisely.,ABI3; ABI5
+23,fixed-023,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between INO80 and FANCM? Summarize the biological significance concisely.,INO80; FANCM
+24,fixed-024,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between AHP1 and ARR4? Summarize the biological significance concisely.,AHP1; ARR4
+25,fixed-025,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between Dis3 and Rrp6? Summarize the biological significance concisely.,Dis3; Rrp6
+26,fixed-026,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between FBXW7 and FAM83D? Summarize the biological significance concisely.,FBXW7; FAM83D
+27,fixed-027,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between OKP1 and AME1? Summarize the biological significance concisely.,OKP1; AME1
+28,fixed-028,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between AXL and S? Summarize the biological significance concisely.,AXL; S
+29,fixed-029,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between cac and comt? Summarize the biological significance concisely.,cac; comt
+30,fixed-030,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between cyb-3 and cdk-1? Summarize the biological significance concisely.,cyb-3; cdk-1
+31,fixed-031,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between USP8 and CHMP1A? Summarize the biological significance concisely.,USP8; CHMP1A
+32,fixed-032,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between IFRD1 and MEF2C? Summarize the biological significance concisely.,IFRD1; MEF2C
+33,fixed-033,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between tsc2 and tsc1? Summarize the biological significance concisely.,tsc2; tsc1
+34,fixed-034,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between STAM and USP8? Summarize the biological significance concisely.,STAM; USP8
+35,fixed-035,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between SAS3 and GCN5? Summarize the biological significance concisely.,SAS3; GCN5
+36,fixed-036,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between LINC00941 and ANXA2? Summarize the biological significance concisely.,LINC00941; ANXA2
+37,fixed-037,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between UBTD2 and USP5? Summarize the biological significance concisely.,UBTD2; USP5
+38,fixed-038,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between cup and EndoA? Summarize the biological significance concisely.,cup; EndoA
+39,fixed-039,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between Cep97 and Sirt2? Summarize the biological significance concisely.,Cep97; Sirt2
+40,fixed-040,ragppi_gold,csv,ragppi; protein_interaction; ragppi_gold,What is reported about the interaction between ASGR1 and S? Summarize the biological significance concisely.,ASGR1; S
+41,fixed-041,doc_design,text,doc_design; architecture; execution_chain,What unified execution chain does the benchmark-ready RAG system use?,planner; retrieve; answer; quality
+42,fixed-042,doc_design,text,doc_design; architecture; routing,Which three query families are explicitly distinguished by the routing layer?,protein-centered; interaction-centered; doc
+43,fixed-043,doc_design,text,doc_design; architecture; retrieval,What retrieval stack is used to balance semantic similarity with exact entity mentions?,pgvector; keyword; FlagEmbedding
+44,fixed-044,doc_design,text,doc_design; architecture; prompt_compression,When is prompt compression activated in the benchmark-ready RAG system?,exceeds; configured token threshold
+45,fixed-045,doc_design,text,doc_design; architecture; answer_layer,How should the answer layer present an entity like PROT-00007 when a readable display name exists?,human-readable; ITI-D2
+46,fixed-046,doc_design,text,doc_design; quality; document_constraints,Which quality check protects exact document terminology and fixed document answers?,document_constraint_alignment
+47,fixed-047,doc_design,text,doc_design; quality; citation,What does citation_field_correctness prevent in citation-oriented answers?,wrong citation field; source identifier; source title
+48,fixed-048,doc_design,text,doc_design; quality; cross_table,What does cross_table_join_consistency verify in the quality layer?,linked entities; consistent; joined tables
+49,fixed-049,doc_design,text,doc_design; quality; monitoring,How are quality failures and runtime degradations surfaced by the system?,diagnostics; offline gates; alerts
+50,fixed-050,doc_design,text,doc_design; quality; deepchecks,Is the current monitoring layer an official Deepchecks SDK integration or a local Deepchecks-style implementation?,local Deepchecks-style; rather than; official
+51,fixed-051,doc_design,text,doc_design; database; core_tables,"Which three normalized tables form the core entity path for proteins, domains, and interactions?",proteins; domains; interactions
+52,fixed-052,doc_design,text,doc_design; database; target_context,Which tables capture target context in the normalized database design?,target_species_variants; targets_conceptual
+53,fixed-053,doc_design,text,doc_design; database; flexibility,Which tables are used to represent structural flexibility at loop and protein levels?,loop_annotations; loop_flexibility_results; protein_flexibility_summary; structural_info
+54,fixed-054,doc_design,text,doc_design; database; developability,"Which table families support developability, oral-uptake, and digestive-stability questions?",cmc_data; developability_results; oral_results; ecoli_expression_results; digestive_assays
+55,fixed-055,doc_design,text,doc_design; database; provenance,Which tables provide provenance and review lineage for source-oriented questions?,sources; result_metadata; manual_review_audit; trusted_source_qc; pipeline_versions
+56,fixed-056,doc_design,text,doc_design; benchmark_protocol; fixed_set,What is the fixed-set composition used in benchmark phase 1?,120; 40; 20; 60
+57,fixed-057,doc_design,text,doc_design; benchmark_protocol; ragas,What is the primary evaluation framework in benchmark phase 1?,RAGAS; primary benchmark evaluation framework
+58,fixed-058,doc_design,text,doc_design; benchmark_protocol; ab_test,What is the core A/B comparison defined for benchmark phase 1?,RAG versus Direct; same fixed question set
+59,fixed-059,doc_design,text,doc_design; benchmark_protocol; deepchecks,What role does Deepchecks-style monitoring play in phase 1 benchmarking?,runtime quality monitoring; feedback; not the primary benchmark score
+60,fixed-060,doc_design,text,doc_design; benchmark_protocol; phase_boundary,Where are Kotaemon-style reasoning and GPT-RAG-style prompt compression positioned in the benchmark narrative?,second-phase enhancement; not the first step of index enhancement
+61,fixed-061,schema_tables,jsonl,schema_tables; protein_profile,"Give a concise profile for protein PROT-00788. Include canonical name, organism, and scaffold/domain information.","calcium channel, voltage-dependent, beta 4 subunit isoform a; Homo sapiens; avimer"
+62,fixed-062,schema_tables,jsonl,schema_tables; protein_profile,"Give a concise profile for protein PROT-01479. Include canonical name, organism, and scaffold/domain information.",10Fn3; Homo sapiens; adnectin
+63,fixed-063,schema_tables,jsonl,schema_tables; protein_profile,"Give a concise profile for protein PROT-02056. Include canonical name, organism, and scaffold/domain information.",DrKIn-I; Daboia russelii russelii; kunitz
+64,fixed-064,schema_tables,jsonl,schema_tables; protein_profile,"Give a concise profile for protein PROT-01986. Include canonical name, organism, and scaffold/domain information.",Metabotropic glutamate receptor 5; Rattus norvegicus; EVH1domain
+65,fixed-065,schema_tables,jsonl,schema_tables; protein_profile,"Give a concise profile for protein PROT-01723. Include canonical name, organism, and scaffold/domain information.",Fibronectin type III domain; Homo sapiens; adnectin
+66,fixed-066,schema_tables,jsonl,schema_tables; protein_profile,"Give a concise profile for protein PROT-00443. Include canonical name, organism, and scaffold/domain information.",Ecballium elaterium trypsin inhibitor II (EETI-II); Ecballium elaterium; knottin
+67,fixed-067,schema_tables,jsonl,schema_tables; protein_profile,"Give a concise profile for protein PROT-01880. Include canonical name, organism, and scaffold/domain information.",Ena/VASP-like protein; Homo sapiens; EVH1domain
+68,fixed-068,schema_tables,jsonl,schema_tables; protein_profile,"Give a concise profile for protein PROT-02039. Include canonical name, organism, and scaffold/domain information.",Fibronectin Type III; Homo sapiens; adnectin
+69,fixed-069,schema_tables,jsonl,schema_tables; protein_identifier,What UniProt identifier is recorded for protein PROT-01677?,UniProt; Q93Z04
+70,fixed-070,schema_tables,jsonl,schema_tables; protein_identifier,What PDB identifier is recorded for protein PROT-01563?,PDB; 1NIY
+71,fixed-071,schema_tables,jsonl,schema_tables; protein_identifier,What UniProt_Entry identifier is recorded for protein PROT-00649?,UniProt_Entry; CYC11_CLITE
+72,fixed-072,schema_tables,jsonl,schema_tables; protein_identifier,What UniProt_Entry identifier is recorded for protein PROT-01397?,UniProt_Entry; ALGE7_AZOVI
+73,fixed-073,schema_tables,jsonl,schema_tables; interaction_overview,"For interaction INT-00667, which protein/domain is involved and is it inhibitory?",Tencon; ABXC-1 (SEQ ID NO: 572); Unknown
+74,fixed-074,schema_tables,jsonl,schema_tables; interaction_overview,"For interaction INT-00681, which protein/domain is involved and is it inhibitory?","A10V, S80A; A10V, S80A; Unknown"
+75,fixed-075,schema_tables,jsonl,schema_tables; interaction_overview,"For interaction INT-01258, which protein/domain is involved and is it inhibitory?",VilXIVA; VilXIVA; Unknown
+76,fixed-076,schema_tables,jsonl,schema_tables; interaction_overview,"For interaction INT-01224, which protein/domain is involved and is it inhibitory?",Vc7.2; Vc7.2; Unknown
+77,fixed-077,schema_tables,jsonl,schema_tables; interaction_overview,"For interaction INT-01818, which protein/domain is involved and is it inhibitory?","Spheniscin-2 (Sphe-2; Penguin Avian Beta-Defensin 103B; Birds ,Animals); Spheniscin-2 (Sphe-2; Penguin Avian Beta-Defensin 103B; Birds ,Animals); Unknown"
+78,fixed-078,schema_tables,jsonl,schema_tables; interaction_overview,"For interaction INT-00732, which protein/domain is involved and is it inhibitory?",Stefin A; cSteA; Unknown
+79,fixed-079,schema_tables,jsonl,schema_tables; interaction_overview,"For interaction INT-00316, which protein/domain is involved and is it inhibitory?",Tencon; ISOP193BR9P1B10; Unknown
+80,fixed-080,schema_tables,jsonl,schema_tables; interaction_overview,"For interaction INT-00653, which protein/domain is involved and is it inhibitory?",Tencon; SEQ ID NO: 377; Unknown
+81,fixed-081,schema_tables,jsonl,schema_tables; affinity,What affinity is recorded for interaction INT-01454 and how was it determined?,34.0
+82,fixed-082,schema_tables,jsonl,schema_tables; affinity,What affinity is recorded for interaction INT-00030 and how was it determined?,1.1e-07; Experimental
+83,fixed-083,schema_tables,jsonl,schema_tables; affinity,What affinity is recorded for interaction INT-00148 and how was it determined?,3.6; Experimental
+84,fixed-084,schema_tables,jsonl,schema_tables; affinity,What affinity is recorded for interaction INT-01745 and how was it determined?,9.2
+85,fixed-085,schema_tables,jsonl,schema_tables; affinity,What affinity is recorded for interaction INT-00993 and how was it determined?,3.6e-05; Experimental
+86,fixed-086,schema_tables,jsonl,schema_tables; affinity,What affinity is recorded for interaction INT-01943 and how was it determined?,63.0
+87,fixed-087,schema_tables,jsonl,schema_tables; affinity,What affinity is recorded for interaction INT-00370 and how was it determined?,8.3e-09; Experimental
+88,fixed-088,schema_tables,jsonl,schema_tables; affinity,What affinity is recorded for interaction INT-01788 and how was it determined?,3.9
+89,fixed-089,schema_tables,jsonl,schema_tables; developability,What developability or CMC signal is recorded for protein PROT-00825?,PROT-00825; E. coli; Low
+90,fixed-090,schema_tables,jsonl,schema_tables; developability,What developability or CMC signal is recorded for protein PROT-02417?,PROT-02417; E. coli BL21(DE3); Medium
+91,fixed-091,schema_tables,jsonl,schema_tables; developability,What developability or CMC signal is recorded for protein PROT-02530?,"PROT-02530; Low; Predicted soluble expression in E. coli by sequence-model consensus (SoluProt, DeepSoluE). A3D does not add a positive aggregation signal."
+92,fixed-092,schema_tables,jsonl,schema_tables; developability,What developability or CMC signal is recorded for protein PROT-01015?,"PROT-01015; Medium; Sequence models conflict, but the directional signal leans toward soluble expression in E. coli. A3D does not add a positive aggregation signal."
+93,fixed-093,schema_tables,jsonl,schema_tables; developability,What developability or CMC signal is recorded for protein PROT-00462?,"PROT-00462; High; Predicted soluble expression in E. coli by sequence-model consensus (SoluProt, CamSol). A3D does not add a positive aggregation signal."
+94,fixed-094,schema_tables,jsonl,schema_tables; developability,What developability or CMC signal is recorded for protein PROT-00373?,PROT-00373; Medium; Leaning toward soluble expression in E. coli from limited sequence-model support (SoluProt). A3D adds a positive aggregation-prone structural signal.
+95,fixed-095,schema_tables,jsonl,schema_tables; annotation,What GO_Terms annotation is recorded for protein PROT-01443?,GO_Terms; serine-type endopeptidase inhibitor activity [GO:0004867]
+96,fixed-096,schema_tables,jsonl,schema_tables; annotation,What GO_Terms annotation is recorded for protein PROT-01649?,GO_Terms; ion channel inhibitor activity [GO:0008200]
+97,fixed-097,schema_tables,jsonl,schema_tables; annotation,What Function annotation is recorded for protein PROT-01564?,Function; FUNCTION: Selective antagonist of neuronal tetrodotoxin (TTX)-sensitive voltage-gated sodium channels (IC(50)=1270 nM on
+98,fixed-098,schema_tables,jsonl,schema_tables; annotation,What GO_Terms annotation is recorded for protein PROT-01890?,GO_Terms; negative regulation of intracellular signal transduction [GO:1902532]
+99,fixed-099,schema_tables,jsonl,schema_tables; provenance,What source is linked to interaction INT-00286?,SRC-00161; Knottin cyclization: impact on structure and dynamics
+100,fixed-100,schema_tables,jsonl,schema_tables; provenance,What source is linked to interaction INT-00153?,SRC-00099; Functional Mutation of Multiple Solvent-Exposed Loops in the Ecballium elaterium Trypsin Inhibitor-II Cystine Knot Miniprotein
+101,fixed-101,schema_tables,jsonl,schema_tables; provenance,What source is linked to interaction INT-00211?,SRC-00124; Repurposing the McoTI-II Rigid Molecular Scaffold in to Inhibitor of ‘Papain Superfamily’ Cysteine Proteases
+102,fixed-102,schema_tables,jsonl,schema_tables; provenance,What source is linked to interaction INT-00157?,SRC-00092; Fusion proteins comprising an engineered knottin peptide and uses thereof
+103,fixed-103,schema_tables,jsonl,schema_tables; structure,What structural flexibility annotation is recorded for protein PROT-01319?,PROT-01319; A:21-33|A:37-41|A:96-100
+104,fixed-104,schema_tables,jsonl,schema_tables; structure,What structural flexibility annotation is recorded for protein PROT-00702?,PROT-00702; A:9-18
+105,fixed-105,schema_tables,jsonl,schema_tables; structure,What structural flexibility annotation is recorded for protein PROT-01747?,PROT-01747; A:23-29|A:60-65
+106,fixed-106,schema_tables,jsonl,schema_tables; structure,What structural flexibility annotation is recorded for protein PROT-02448?,PROT-02448; A:24-29|A:38-44|A:75-83
+107,fixed-107,schema_tables,jsonl,schema_tables; digestive_assay,What digestive assay result is recorded for aSG2 against trypsin?,aSG2; trypsin; 75.0
+108,fixed-108,schema_tables,jsonl,schema_tables; digestive_assay,What digestive assay result is recorded for aSG2 against pepsin?,aSG2; pepsin; 75.0
+109,fixed-109,schema_tables,jsonl,schema_tables; immunogenicity,What immunogenicity judgement is recorded for sequence SEQ_7FF8A21A22A4?,SEQ_7FF8A21A22A4; High; High
+110,fixed-110,schema_tables,jsonl,schema_tables; immunogenicity,What immunogenicity judgement is recorded for sequence SEQ_432C799E21EB?,SEQ_432C799E21EB; High; High
+111,fixed-111,schema_tables,jsonl,schema_tables; loop_annotation,What loop annotation is recorded for loop SEQ_7C086D962507:A:L2 in sequence SEQ_7C086D962507?,SEQ_7C086D962507:A:L2; replaceable_scaffold_loop_candidate; unknown
+112,fixed-112,schema_tables,jsonl,schema_tables; loop_annotation,What loop annotation is recorded for loop SEQ_71C45AA0CE18:A:L6 in sequence SEQ_71C45AA0CE18?,SEQ_71C45AA0CE18:A:L6; replaceable_scaffold_loop_candidate; unknown
+113,fixed-113,schema_tables,jsonl,schema_tables; loop_flexibility,What flexibility assessment is reported for loop SEQ_D69AD2658C17:A:L3?,SEQ_D69AD2658C17:A:L3; flexible; high_confidence_flexible
+114,fixed-114,schema_tables,jsonl,schema_tables; loop_flexibility,What flexibility assessment is reported for loop SEQ_CF6DC3CAB27C:A:L5?,SEQ_CF6DC3CAB27C:A:L5; intermediate; ambiguous
+115,fixed-115,schema_tables,jsonl,schema_tables; protein_flexibility,What protein-level flexibility summary is reported for sequence SEQ_06A54437B0A9?,SEQ_06A54437B0A9; 2; 0.137812
+116,fixed-116,schema_tables,jsonl,schema_tables; protein_flexibility,What protein-level flexibility summary is reported for sequence SEQ_8B336D580B2E?,SEQ_8B336D580B2E; 2; 0.6942524999999999
+117,fixed-117,schema_tables,jsonl,schema_tables; target_variant,What target variant context is recorded for TVAR-00065?,TVAR-00065; Homo sapiens; TNFRSF9
+118,fixed-118,schema_tables,jsonl,schema_tables; target_variant,What target variant context is recorded for TVAR-00074?,TVAR-00074; Homo sapiens; CXCR4
+119,fixed-119,schema_tables,jsonl,schema_tables; source_metadata,What source metadata is recorded for source SRC-00617?,SRC-00617; 1vtxA_KN; unknown
+120,fixed-120,schema_tables,jsonl,schema_tables; source_metadata,What source metadata is recorded for source SRC-00057?,SRC-00057; Chimeric proteins; 2004-08-31

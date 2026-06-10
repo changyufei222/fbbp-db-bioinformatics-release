@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-04-02T21:38:07",
+  "tbp_total_loops": 3383,
+  "tbp_binary_comparable_loops": 2870,
+  "tbp_primary_binary_loops": 816,
+  "tbp_exact_sequence_match_loops": 121,
+  "air_total_loops": 21104,
+  "air_pdb_loops": 20814,
+  "tbp_binary_flexible_fraction": 0.7644599303135888,
+  "tbp_primary_flexible_fraction": 0.7941176470588235,
+  "air_flexible_fraction": 0.21052880970432145,
+  "air_pdb_flexible_fraction": 0.2060632266743538,
+  "length_standardized": {
+    "TBP_all_binary": {
+      "tbp_total": 2870,
+      "tbp_flexible_count": 2194,
+      "tbp_rigid_count": 676,
+      "tbp_flexible_fraction": 0.7644599303135888,
+      "air_expected_flexible_fraction": 0.26997480433660215,
+      "tbp_minus_air_expected_fraction": 0.4944851259769867,
+      "air_missing_length_count": 0
+    },
+    "TBP_primary_approved": {
+      "tbp_total": 816,
+      "tbp_flexible_count": 648,
+      "tbp_rigid_count": 168,
+      "tbp_flexible_fraction": 0.7941176470588235,
+      "air_expected_flexible_fraction": 0.306179601970361,
+      "tbp_minus_air_expected_fraction": 0.4879380450884625,
+      "air_missing_length_count": 0
+    }
+  }
+}

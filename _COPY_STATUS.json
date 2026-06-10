@@ -1,0 +1,52 @@
+[
+  {
+    "status": "copied",
+    "source": "<local_path_removed>",
+    "relative_path": "README.md"
+  },
+  {
+    "status": "copied",
+    "source": "<local_path_removed>",
+    "relative_path": "README_CN.md"
+  },
+  {
+    "status": "copied",
+    "source": "<local_path_removed>",
+    "relative_path": "supplementary_data_repository_inventory.csv"
+  },
+  {
+    "status": "copied",
+    "source": "<local_path_removed>",
+    "relative_path": "package_manifest.csv"
+  },
+  {
+    "status": "copied",
+    "source": "<local_path_removed>",
+    "relative_path": "checksums_sha256.txt"
+  },
+  {
+    "status": "copied",
+    "source": "<local_path_removed>",
+    "relative_path": "Supplementary_Data_1_Field_Level_Data_Dictionary"
+  },
+  {
+    "status": "copied",
+    "source": "<local_path_removed>",
+    "relative_path": "Supplementary_Data_2_LLM_Prompts_and_Curation_QC"
+  },
+  {
+    "status": "copied",
+    "source": "<local_path_removed>",
+    "relative_path": "Supplementary_Data_3_RAG_Agent_Benchmark"
+  },
+  {
+    "status": "copied",
+    "source": "<local_path_removed>",
+    "relative_path": "Supplementary_Data_4_Figure_Source_Data_Code_Manifest"
+  },
+  {
+    "status": "copied",
+    "source": "<local_path_removed>",
+    "relative_path": "Repository_Files_FBBP_DB_v1_release"
+  }
+]

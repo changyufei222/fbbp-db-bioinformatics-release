@@ -1,0 +1,21 @@
+file,source_docx_table_index_zero_based,data_rows,description
+Supplementary_Data_3a_RAG_benchmark_set_design.csv,16,4,Benchmark source categories and design
+Supplementary_Data_3b_RAG_question_subclass_distribution.csv,17,15,Question subclass distribution
+Supplementary_Data_3c_fixed_120_question_benchmark_set.csv,18,120,Fixed 120-question benchmark set
+Supplementary_Data_3d_direct_vs_RAG_model_results.csv,19,8,Direct versus RAG model-level results
+Supplementary_Data_3e_question_category_uplift_summary.csv,20,3,Question-category uplift summary
+Supplementary_Data_3f_model_by_category_uplift_summary.csv,21,8,Model-by-category uplift summary
+Supplementary_Data_3g_appendix_control_results.csv,22,8,Appendix/control comparison
+Supplementary_Data_3h_topk_sensitivity_summary.csv,23,3,Candidate top-k sensitivity summary
+Supplementary_Data_3i_benchmark_settings.csv,24,7,Benchmark settings
+Supplementary_Data_3j_repeatability_summary.csv,25,2,Repeatability summary
+Supplementary_Data_3a_RAG_benchmark_set_design_english_headers.csv,,4,English-header alias of Supplementary_Data_3a_RAG_benchmark_set_design.csv; values and original benchmark wording are unchanged.
+Supplementary_Data_3b_RAG_question_subclass_distribution_english_headers.csv,,15,English-header alias of Supplementary_Data_3b_RAG_question_subclass_distribution.csv; values and original benchmark wording are unchanged.
+Supplementary_Data_3c_fixed_120_question_benchmark_set_english_headers.csv,,120,English-header alias of Supplementary_Data_3c_fixed_120_question_benchmark_set.csv; values and original benchmark wording are unchanged.
+Supplementary_Data_3d_direct_vs_RAG_model_results_english_headers.csv,,8,English-header alias of Supplementary_Data_3d_direct_vs_RAG_model_results.csv; values and original benchmark wording are unchanged.
+Supplementary_Data_3e_question_category_uplift_summary_english_headers.csv,,3,English-header alias of Supplementary_Data_3e_question_category_uplift_summary.csv; values and original benchmark wording are unchanged.
+Supplementary_Data_3f_model_by_category_uplift_summary_english_headers.csv,,8,English-header alias of Supplementary_Data_3f_model_by_category_uplift_summary.csv; values and original benchmark wording are unchanged.
+Supplementary_Data_3g_appendix_control_results_english_headers.csv,,8,English-header alias of Supplementary_Data_3g_appendix_control_results.csv; values and original benchmark wording are unchanged.
+Supplementary_Data_3i_benchmark_settings_english_headers.csv,,7,English-header alias of Supplementary_Data_3i_benchmark_settings.csv; values and original benchmark wording are unchanged.
+Supplementary_Data_3j_repeatability_summary_english_headers.csv,,2,English-header alias of Supplementary_Data_3j_repeatability_summary.csv; values and original benchmark wording are unchanged.
+Supplementary_Data_3_english_header_alias_map.csv,,9,Map from original RAG benchmark files to English-header aliases.

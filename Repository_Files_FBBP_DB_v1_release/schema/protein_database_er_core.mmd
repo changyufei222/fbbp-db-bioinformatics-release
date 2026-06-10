@@ -1,0 +1,137 @@
+erDiagram
+  PROTEINS ||--o{ PROTEIN_IDENTIFIERS : has
+  PROTEINS ||--o{ DOMAINS : owns
+  SOURCES ||--o{ DOMAINS : documents
+  TARGETS_CONCEPTUAL ||--o{ TARGET_SPECIES_VARIANTS : expands_to
+  DOMAINS ||--o{ INTERACTIONS : participates_in
+  TARGET_SPECIES_VARIANTS ||--o{ INTERACTIONS : target_of
+  SOURCES ||--o{ INTERACTIONS : supports
+  INTERACTIONS ||--o{ AFFINITY_DATA : quantified_by
+  DOMAINS ||--o{ DIGESTIVE_ASSAYS : tested_by
+  PROTEINS ||--o{ FUNCTIONAL_ANNOTATIONS : annotated_by
+  DOMAINS ||--o{ STRUCTURAL_SOURCE_INFO : source_structure
+  PROTEINS ||--|| ACTIVE_STRUCTURE_CONTEXT : active_structure
+
+  SOURCES {
+    text source_id PK
+    text identifier
+    text title
+    text authors
+    text journal_or_office
+    text publication_date
+    text source_file_name
+    text source_type
+  }
+
+  PROTEINS {
+    integer protein_id PK
+    text structure_unique_sequence_id
+    text canonical_name
+    text organism
+    text source_sequence
+    text description
+    text scaffold_category
+    text final_tested_sequence
+    integer sequence_length
+  }
+
+  PROTEIN_IDENTIFIERS {
+    text identifier_id PK
+    integer protein_id
+    text id_type
+    text id_value
+    text status
+  }
+
+  DOMAINS {
+    text domain_id PK
+    integer protein_id
+    text source_id
+    text structure_unique_sequence_id
+    text domain_name
+    text sequence
+    boolean is_engineered
+    text construct_details
+    text scaffold_type
+  }
+
+  TARGETS_CONCEPTUAL {
+    text target_concept_id PK
+    text gene_name
+    text protein_name
+  }
+
+  TARGET_SPECIES_VARIANTS {
+    text target_variant_id PK
+    text target_concept_id
+    text species_name
+    text uniprot_id
+    text gene_name_species
+  }
+
+  INTERACTIONS {
+    text interaction_id PK
+    text domain_id
+    text target_variant_id
+    text source_id
+    text interaction_class
+    boolean is_inhibitory
+    integer protein_row_id
+    text structure_unique_sequence_id
+  }
+
+  AFFINITY_DATA {
+    text affinity_id PK
+    text interaction_id
+    text determination_method
+    text value
+  }
+
+  DIGESTIVE_ASSAYS {
+    text assay_id PK
+    text domain_id
+    text enzyme_name
+    real result_value
+  }
+
+  FUNCTIONAL_ANNOTATIONS {
+    text annotation_id PK
+    integer protein_id
+    text annotation_type
+    text annotation_value
+  }
+
+  STRUCTURAL_SOURCE_INFO {
+    text structure_id PK
+    text domain_id
+    text structure_unique_sequence_id
+    text pdb_id
+    text method
+    real resolution
+    text source_structure_identifier
+    text source_structure_type
+    text source_structure_note
+  }
+
+  ACTIVE_STRUCTURE_CONTEXT {
+    integer protein_row_id PK
+    text structure_unique_sequence_id PK
+    text structure_best_available_source
+    text structure_source
+    text structure_type
+    text structure_locator
+    text chain_id
+    integer resnum_start
+    integer resnum_end
+    integer chain_length
+    text final_chain_assignment
+    boolean complex_chain_annotation_completed
+    text pdb_path
+    text pdb_code
+    boolean chain_count
+    text structure_match_type
+    text structure_match_detail
+    real structure_match_identity
+    real structure_match_coverage
+    real structure_match_chain_coverage
+  }

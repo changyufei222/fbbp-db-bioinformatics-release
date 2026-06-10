@@ -1,0 +1,7 @@
+original_non_ascii_path,english_public_path,action,note
+tables/数据库Schema表结构清单.csv,tables/database_schema_table_inventory.csv,renamed_for_public_package,English public-package filename used for Bioinformatics/Zenodo compatibility; original-language name recorded for traceability.
+schema/数据库Schema表结构清单.csv,schema/database_schema_table_inventory.csv,renamed_for_public_package,English public-package filename used for Bioinformatics/Zenodo compatibility; original-language name recorded for traceability.
+schema/数据库Schema表结构清单.md,schema/database_schema_table_inventory.md,renamed_for_public_package,English public-package filename used for Bioinformatics/Zenodo compatibility; original-language name recorded for traceability.
+schema/数据库Schema说明.md,schema/database_schema_description.md,renamed_for_public_package,English public-package filename used for Bioinformatics/Zenodo compatibility; original-language name recorded for traceability.
+analysis/air_all_background/TBP_vs_AIRs与masked_MSA详细过程结果_20260405.md,analysis/air_all_background/TBP_vs_AIRs_masked_MSA_detailed_process_results_20260405.md,renamed_for_public_package,English public-package filename used for Bioinformatics/Zenodo compatibility; original-language name recorded for traceability.
+figure_source_data/schema_web_resource/ER图.png,figure_source_data/schema_web_resource/ER_diagram.png,renamed_for_public_package,English public-package filename used for Bioinformatics/Zenodo compatibility; original-language name recorded for traceability.

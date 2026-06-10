@@ -1,0 +1,3 @@
+cohort,tbp_total,tbp_flexible_count,tbp_rigid_count,tbp_flexible_fraction,air_expected_flexible_fraction,tbp_minus_air_expected_fraction,air_missing_length_count
+TBP_all_binary,2870,2194,676,0.7644599303135888,0.26997480433660215,0.4944851259769867,0
+TBP_primary_approved,816,648,168,0.7941176470588235,0.306179601970361,0.4879380450884625,0
