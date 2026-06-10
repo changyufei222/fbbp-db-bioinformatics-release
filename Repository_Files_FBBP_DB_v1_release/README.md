@@ -42,7 +42,7 @@ Release date: 2026-06-01
 
 ## DOI and citation status
 
-Zenodo DOI is not assigned yet. Replace `10.5281/zenodo.TBD` in `CITATION.cff` after reserving or publishing the Zenodo record.
+The Zenodo archived version of record is available at `10.5281/zenodo.20626953`. The concept DOI for this release line is `10.5281/zenodo.20626952`.
 
 ## Filename hygiene
 
