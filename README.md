@@ -28,4 +28,7 @@ Package structure:
 
 Absolute local filesystem paths were removed from generated public-facing files. Sanitized build provenance is provided without local source paths, and package-level checksums are provided in `checksums_sha256.txt`.
 
+## Engineering Portfolio Evidence
+
+The [`benchmarks/vllm_qwen25_0p5b_20260613`](./benchmarks/vllm_qwen25_0p5b_20260613/) directory provides a sanitized vLLM OpenAI-compatible inference benchmark used as engineering portfolio evidence for private model-backend integration. This directory is intentionally separate from the FBBP Bioinformatics supplementary-data DOI package: it is a single-GPU smoke/formal benchmark for private OpenAI-compatible inference backend integration, not a high-concurrency serving or kernel optimization benchmark.
 

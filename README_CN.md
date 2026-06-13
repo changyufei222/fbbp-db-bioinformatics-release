@@ -36,4 +36,8 @@
 - [LLM RAG Knowledge Base](https://github.com/changyufei222/llm-rag-knowledge-base)
 - [LLM Eval Benchmark](https://github.com/changyufei222/llm-eval-benchmark)
 
+## 工程作品集证据
+
+[`benchmarks/vllm_qwen25_0p5b_20260613`](./benchmarks/vllm_qwen25_0p5b_20260613/) 目录提供一个脱敏后的 vLLM OpenAI-compatible 推理 benchmark，用作私有化模型后端接入能力的工程作品集证据。该目录与 FBBP Bioinformatics 补充数据 DOI 包保持分离：它是 single-GPU smoke/formal benchmark for private OpenAI-compatible inference backend integration; not a high-concurrency serving or kernel optimization benchmark.
+
 详细界面与公开边界说明见 [INTERFACE_GUIDE_CN.md](./INTERFACE_GUIDE_CN.md)。
