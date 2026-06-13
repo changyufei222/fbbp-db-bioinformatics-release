@@ -1,0 +1,17 @@
+metric,value
+model,qwen2.5-0.5b-instruct
+gpu,NVIDIA GeForce RTX 4090
+warm_up_requests_excluded,3
+measured_requests,50
+ok_requests,50
+errors,0
+avg_latency_ms,262.46
+p50_latency_ms,329.93
+p95_latency_ms,332.88
+min_latency_ms,91.72
+max_latency_ms,333.50
+completion_tokens,4990
+total_tokens,7040
+measured_wall_s,13.13
+completion_tok_per_s_wall,380.18
+total_tok_per_s_wall,536.37
